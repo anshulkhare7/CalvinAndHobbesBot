@@ -64,10 +64,11 @@ public class CalvinBot extends TelegramLongPollingBot{
 							int randIdx = rand.nextInt(fieldsets.length);
 							String randomResult = fieldsets[randIdx];
 							String randomComicLink = randomResult.substring(randomResult.indexOf("<a class='img_link' href='")+26, randomResult.indexOf("'><img src='comic.png'"));
-							log.info(randomComicLink);	
+							String description = randomResult.substring(randomResult.indexOf("<div class='description'>")+25, randomResult.indexOf("<span class='strip'")-7);
+							log.info(randomComicLink);							
+							responseText.append("<b>Description: </b>").append(description).append("\n").append("\n");
 							responseText.append(randomComicLink);
-						}
-						 
+						}						 
 					}				
 				    	
 			    	}catch(Exception e) {		    		
