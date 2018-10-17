@@ -1,3 +1,6 @@
+mvnw
+mvnw.cmd
+.project
 target/
 pom.xml.tag
 pom.xml.releaseBackup
