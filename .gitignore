@@ -1,5 +1,6 @@
 mvnw
 mvnw.cmd
+bin/
 .project
 target/
 pom.xml.tag

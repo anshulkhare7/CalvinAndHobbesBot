@@ -20,7 +20,7 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 @Component
 public class CalvinBot extends TelegramLongPollingBot{
 
-	private static final String BOT_TOKEN = "703719936:AAFRYbq7kJK92fMYDSH6N5mWfWhwQJs3S9o"; 
+	private static final String BOT_TOKEN = ""; 
 	private static final String BOT_NAME = "calvinandhobbes_bot";
 	private static final String CALVIN_HOBBES_SEARCH_URL = "http://michaelyingling.com/random/calvin_and_hobbes/search.php?phrase=";
 	private static final Logger log = LoggerFactory.getLogger(CalvinBot.class);
